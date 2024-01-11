@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_JS 개요</title>
+
+</head>
+<body>
+    
+    <h1>Script 언어</h1>
+
+    <pre>기본 프로그램의 동작을 사용자의 요구에 맞게 수행되도록 해주는 용도의 언어
+        별도의 소스코드 컴파일을 하지 않고 Interpreter 를 이용해서 코드를 바로 실행
+
+        -장점: 컴파일에 소요되는 시간 X
+        -단점: 프로그램 실행 시간이 상대적으로 느림 
+    </pre>
+    
+    <hr>
+
+    <h1>JavaScript</h1>
+
+    <pre>웹 브라우저에서 주로 사용하는 인터프리터 방식의 객체 지향 프로그래밍 언어
+    
+        ECMA Script 표준을 따르는 대표적인 웹 기술
+        (JS 버전 이름: ES5, ES6, ES7 ...)
+    </pre>
+    
+    <hr>
+
+    <h1>JavaScript 코드 작성 방법</h1>
+
+    <ol>
+        <li>브라우서 개발자도구 -> Console 에 직접 작성</li>
+        <li>HTML 내부에 script 태그를 이용해서 작성 (Internal 방식)
+            <br>
+            <button type="button" onclick="InternalFn()">Internal 방식 확인</button>
+
+            <script>
+                // JS 한줄 주석
+                /* JS 범위 주석 */
+
+                /* script 태그 : JS 코드를 작성할 수 있는 태그 */
+
+                function InternalFn(){
+                    alert("Internal 버튼이 클릭 되었습니다."); // 알림창, 대화상자
+                }
+            </script>
+        </li>
+        <li>
+            HTML 외부에 존재하는 .js 파일을 연결해서 사용하는 방법(External 방식)
+            <br>
+            <button type="button" onclick="externalFn()">external 방식 확인</button>
+        </li>
+        <li>
+            태그에 직접 JS 코드를 작성(inline 방식, 권장 X)
+            <br>
+            <button type="button" onclick="alert('inline 버튼 클릭됨')">inline 방식 확인</button>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h1>JS 맛보기</h1>
+
+    <button type="button" onclick="lightMode()">라이트 모드</button>
+    <button type="button" onclick="darkMode()">다크 모드</button>
+
+    <script src="../js/01_JS개요.js"></script>
+
+</body>
+</html>
