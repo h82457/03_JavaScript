@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단표 만들기</title>
+</head>
+<body>
+    
+ 
+    <header>
+        <h1>구구단 표 만들기</h1>
+      </header>
+    
+      <main>
+        시작 단 : <input type="number" id="start">
+        종료 단 : <input type="number" id="end">
+        <button onclick="createTable()">만들기</button>
+        
+        <table border="1">
+          <thead> <!-- 테이블 제목 영역 -->
+            <tr id="thead-row">
+<!--                 <th>2단</th>
+                <th>3단</th> -->
+
+            </tr>
+          </thead>
+              <!-- 테이블 몸통(내용, 데이터)를 작성하는 부분 -->
+          <tbody id="tbody">
+            <tr>
+<!--                 <td>2x1=2</td>
+                <td>3x1=3</td> -->
+            </tr>
+            <tr>
+<!--                 <td>2x2=4</td>
+                <td>3x2=6</td> -->
+            </tr>
+
+          </tbody>
+        </table>
+      </main>
+    
+    
+
+
+    <script src="../js/08_구구단표.js"></script>
+</body>
+</html>
