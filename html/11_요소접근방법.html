@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/11_요소접근방법.css">
+</head>
+<body>
+    
+    <h1>DOM(Document Object Model)</h1>
+
+    <pre>
+      웹 문서(HTML)의 모든 요소를 객체 형식으로 표현한 것
+      (HTML 요소 == JS에서 객체라고 부름)
+  
+      -> 문서 내 특정 요소에 접근 가능
+         + 요소(객체)에 속성 값을 세팅 또는 얻어올 수 있다
+    </pre>
+  
+    <hr>
+    <h1>DOM을 이용한 요소 접근 하기</h1>
+  
+    <pre>
+      1. id로 접근하기 : document.getElementById("id속성값");
+          -> 아이디가 일치하는 요소(객체)를 얻어옴
+          (id만 유일하기떄문에 id 외에는 Element s<-) 
+  
+          
+      2. class로 접근하기 : document.getElementsByClassName("class속성값"); 
+          -> 클래스가 일치하는 모든 요소를 얻어와 배열 형태로 반환  
+          
+  
+      3. name으로 접근하기 : document.getElementsByName("name속성값"); 
+          -> name이 일치하는 모든 요소를 얻어와 배열(NodeList, 유사배열) 형태로 반환  
+  
+  
+      4. tag로 접근하기 : document.getElementsByTagName("tag명"); 
+          -> 태그가 일치하는 모든 요소를 얻어와 배열 형태로 반환  
+  
+  
+      5. CSS 선택자로 접근하기
+          
+          1) document.querySelector("CSS 선택자");
+              -> 선택자가 선택한 요소 중 첫 번째 요소를 반환
+  
+          2) document.querySelectorAll("CSS 선택자");
+              -> 선택한 요소 모두를 배열(NodeList, 유사배열) 형태로 반환
+    </pre>
+
+
+    <h3>class 를 이용한 요소 (DOM 객체) 접근하기</h3>
+
+    <button onclick="classTest()">클래스 접근 테스트</button>
+    <div class="cls-test"></div>
+    <div class="cls-test"></div>
+    <div class="cls-test"></div>
+
+    <script src="../js/11_요소접근방법.js"></script>
+</body>
+</html>
