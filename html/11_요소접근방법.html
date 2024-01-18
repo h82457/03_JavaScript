@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>11_요소 접근 방법</title>
 
     <link rel="stylesheet" href="../css/11_요소접근방법.css">
 </head>
@@ -25,7 +25,7 @@
     <pre>
       1. id로 접근하기 : document.getElementById("id속성값");
           -> 아이디가 일치하는 요소(객체)를 얻어옴
-          (id만 유일하기떄문에 id 외에는 Element s<-) 
+          (id만 유일하기떄문에 id 외에는 Element s<- 복수형태) 
   
           
       2. class로 접근하기 : document.getElementsByClassName("class속성값"); 
@@ -56,6 +56,108 @@
     <div class="cls-test"></div>
     <div class="cls-test"></div>
     <div class="cls-test"></div>
+
+
+    <hr>
+
+    <h3>input 에 입력된 숫자를 모두 얻어와 합계 구하기</h3>
+    
+    <input type="number" class="cls-test2"><br>
+    <input type="number" class="cls-test2"><br>
+    <input type="number" class="cls-test2"><br>
+    <input type="number" class="cls-test2"><br>
+    <input type="number" class="cls-test2"><br>
+
+    <button onclick="classTest2()">합계 구하기</button>
+
+    <hr>
+
+    <h3>태그명으로 요소 접근하기</h3>
+
+    <!-- https://coolors.co/palettes/trending -->
+    <ul>
+        <li>#ef476f</li>
+        <li>#ffd166</li>
+        <li>#06d6a0</li>
+        <li>#118ab2</li>
+        <li>#073b4c</li>
+    </ul>
+
+    <button onclick="tagNameTest()">배경색 변경</button>
+
+
+    <h3>name 으로 요소 접근하기</h3>
+
+    <pre>
+        name 속성은 input / input 관련 태그만 가지고 있는 기본 속성
+
+    </pre>
+
+    <table>
+        <tr>
+          <td>
+            <input type="checkbox" name="hobby" id="game" value="게임">
+            <label for="game">게임</label>
+          </td>
+          <td>
+            <input type="checkbox" name="hobby" id="music" value="음악감상">
+            <label for="music">음악감상</label>
+          </td>
+          <td>
+            <input type="checkbox" name="hobby" id="movie" value="영화감상">
+            <label for="movie">영화감상</label>
+          </td>
+        </tr>
+    
+        <tr>
+          <td>
+            <input type="checkbox" name="hobby" id="coding" value="코딩">
+            <label for="coding">코딩</label>
+          </td>
+          <td>
+            <input type="checkbox" name="hobby" id="exercise" value="운동">
+            <label for="exercise">운동</label>
+          </td>
+          <td>
+            <input type="checkbox" name="hobby" id="book" value="독서">
+            <label for="book">독서</label>
+          </td>
+        </tr>
+      </table>
+    
+      <div id="name-div">운동, 독서</div>
+
+      <button onclick="nameTest()">선택된 취미만 출력하기</button>
+
+      <hr>
+
+      <h3>CSS 선택자로 요소 접근하기</h3>
+
+      <div target-div="css-div">
+        <div>test1</div>    
+        <div>test2</div>    
+      </div>
+
+      <button onclick="cssTest()">CSS 선택자로 요소 접근하기</button>
+
+      <hr>
+
+      <h3>카카오톡 모양의 채팅 화면 만들기</h3>
+
+      <div class="chatting">
+        <div id="chatting-bg">
+          <p><span>입력되는 채팅 출력</span></p>
+          <p><span>입력되는 채팅 출력</span></p>
+          <p><span>입력되는 채팅 출력</span></p>
+        </div>
+    
+        <div id="chatting-input">
+          <input type="text" id="user-input">
+          <button onclick="readValue()">입력</button>
+        </div>
+      </div>
+
+
 
     <script src="../js/11_요소접근방법.js"></script>
 </body>

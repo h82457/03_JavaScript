@@ -1,5 +1,5 @@
 /* 배열 선언 및 기초 사용법 */
-function check1(){
+function check0(){
 
     // 배열 선언 방법 확인
     const arr1 = new Array();
@@ -49,7 +49,7 @@ function check1(){
 }
 
 /* 배열 X for 문 1 */
-function check2(){
+function check1(){
 
     // for 문을 이용해서 배열 요소 초기화
 
@@ -79,7 +79,7 @@ function check2(){
 }
 
 /* 배열 X for 문 2 */
-function check3(){
+function check2(){
 
     /* 
     배열에 저장된 값 하나씩 순서대로 출력하기
@@ -98,7 +98,7 @@ function check3(){
 }
 
 /* 배열 X for 문 3 */
-function check4(){
+function check3(){
     /* 
     for문을 이용해서 배열을 순서대로 초기화 한 후
     다른 for문을 이용해서 배열 요소를 하나씩 모두 출력

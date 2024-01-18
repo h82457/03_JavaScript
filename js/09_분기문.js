@@ -31,7 +31,6 @@ function check3(){  // 1부터 20까지 출력, 3의 배수는 건너뛰기
         if(i % 3 == 0) continue; // 3의 배수인 경우 for 로 이동
 
         console.log("i : ", i);
-
     }
 }
 

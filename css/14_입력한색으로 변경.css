@@ -1,0 +1,30 @@
+.container{
+    width: 1000px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+#col{
+    padding: 10px;
+    margin: auto;
+}
+
+#col div{
+    box-sizing: border-box;
+    height: 200px;
+
+    border: 1px solid black;
+}
+
+#btn{
+    display: inline-block;
+    text-align: center;
+    width: 800px;
+}
