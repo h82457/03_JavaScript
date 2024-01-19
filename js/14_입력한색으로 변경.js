@@ -1,11 +1,10 @@
-const boxList = document.querySelectorAll("#col div");
-const inputList = document.querySelectorAll("#col input");
-const btn = document.querySelector("#btn");
+const boxList = document.querySelectorAll(".box");
+const inputList = document.querySelectorAll(".color-input");
 
-btn.addEventListener("click", function(){
+document.querySelector("#changeButton").addEventListener("click", function(){
     
     for(let i=0 ; i < inputList.length ; i++){
         // console.log(inputList[i].value);
         boxList[i].style.backgroundColor = inputList[i].value;
     }
-})
+});
