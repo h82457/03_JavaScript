@@ -11,18 +11,35 @@
 
     <h1>input에 작성된 값 모두 더하기</h1>
 
-    <div class="container">
-        <button id="add">추가</button>
-        <button id="result">계산</button>
-        <div id="input">
-            <input type="number" class="num">
-            <input type="number">
-            <input type="number">
-            <input type="number">
-        </div>
 
-        
-    </div>
+    <div>
+
+        <button id="add">추가</button>
+        <button id="calc">계산</button>
+    
+        <div class="container">
+          <div class="row">
+            <input type="number" class="input-number">
+          </div>
+    
+          <div class="row">
+            <input type="number" class="input-number">
+          </div>
+    
+        </div>
+        <!-- JS 만들 요소 견본  -->
+        <!-- <div class="row">
+          <input type="number" class="input-number">
+          <span class="remove-row">&times;</span>
+        </div> -->
+    
+      </div>
+
+      <!-- 
+
+        로딩, 이벤트 발생등 시점에 따라 선택되는 요소가 달라짐
+            -> x버튼처럼 새롭게 만들어지는 요소(둉적 추가 요소)는 만들어지는 시점에 이벤트 추가 코드 작성 필요
+       -->
 
     <script src="../js/99_input에작성된값모두더하기.js"></script>
 </body>
