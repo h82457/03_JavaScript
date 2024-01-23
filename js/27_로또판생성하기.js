@@ -2,24 +2,20 @@
 const createBtn = document.querySelector("#createBtn");
 const lottoContainer = document.querySelector("#lottoContainer");
 
+// 버튼 클릭시 로또판 생성
 createBtn.addEventListener("click", () => {
-    // lottoContainer의 자식 요소로 div를 9줄 생성
 
-    const number = document.createElement("div");
-    number.classList.add("number");
+    for(let i=0 ; i<45 ; i++){
+        const number = document.createElement("div");
+        number.classList.add("number");
+        lottoContainer.append(number);
+        number.textContent = i;
+    }
+});
 
-
-
-/* 
-    for(let i=0 ; i<9 ; i++){
-
-
-/*     // #row의 자식 요소로 div를 5개씩 생성 <- 9줄 반복
-        for(let j=0 ; j<5 ; j++){
-            
-        } */
-
-
+// 로또판 숫자 클릭시 선택 + 취소
+number.addEventListener("click", () => {
+    number.classList.add("checked");
 
 
 });

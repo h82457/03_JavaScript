@@ -8,19 +8,22 @@
 #lottoContainer{
     border: 1px solid black;
     width: 300px;
-    height: 400px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
-#row{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-}
 .number{
-    width: 40px;
-    height: 40px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid black;
+    text-align: center;
+    
+    
 }
 .checked{
     background-color: orange;
