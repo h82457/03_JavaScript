@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -30,4 +30,33 @@
 }
 .unchecked{
     background-color: white;
+} */
+
+#lottoBoard{
+    border: 1pzx solid black;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.number{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.active{
+    background-color: orange;    
 }
