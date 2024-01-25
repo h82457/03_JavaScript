@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid darkgrey; */
+    border: 1px solid darkgrey;
 }
 .container{
     width: 540px;
@@ -97,23 +97,27 @@
 }
 li{
     text-align: center;
-    font-size: 15px;
     padding: 5px 0;
 }
 li > div{
     display: inline;
     padding: 0 10px;
     background-size: cover;
-
-    
+    font-size: 15px;
 }
+.favorite > div .img-s-f{
+    color : red;
+    background-image: url(./UI구현_임세미_star-fill.png);    
+}
+
 .img-s{
     background-image: url(./UI구현_임세미_star.png);
     margin: 0 10px;
     cursor: pointer;
 
 
-}.img-s:active{
+}
+.img-s:active{
     background-image: url(./UI구현_임세미_star-fill.png);
     margin: 0 10px;
     cursor: pointer;

@@ -8,6 +8,8 @@ const resetBtn = document.querySelector("#resetBtn");
 
 
 
+
+
 // 번호 클릭 시 번호 위에 클릭한 번호가 누적 되서 출력
 for(let num of dialNum){
     num.addEventListener("click", e => {
@@ -32,26 +34,42 @@ resetBtn.addEventListener("click", () => {
 // 번호 위에 누적된 클릭한 번호를 지움
 addBtn.addEventListener("click", () => {
     const number = dialHeader.textContent;
-    const numH = number + "<div class='img-s'></div><div class='img-x'></div>";
-
     const regExp =  /^01[01679]\d{3,4}\d{4}$/;
 
     if(regExp.test(number)){
+
         const li = document.createElement("li");
-        li.innerHTML = numH;
+        
+        const divNum = document.createElement("div");
+        divNum.textContent = number;
+
+        const divStar = document.createElement("div");
+        divStar.classList.add("img-s");
+
+        // 즐겨찾기 클릭
+        divStar.addEventListener("click", e => {
+            const parent = e.target.parentElement;
+        
+            if(parent.classList.contains("favorite")){
+                parent.classList.remove("favorite");        
+            }else{
+                parent.classList.add("favorite");
+            }
+        })
+
+        const divX = document.createElement("div");
+        divX.classList.add("img-x");
+
+        // 삭제 클릭
+
+        divX.addEventListener("click", e => {
+            e.target.parentElement.remove();
+
+        })
+
+        li.append(divNum, divStar, divX);
         listBoard.append(li);
         dialHeader.textContent = "";
     }
-});
-
-// 삭제 버튼 클릭 시 해당 줄을 모두 삭제
-const del = document.querySelector(".img-x");
-
-
-
-del.addEventListener("click", e => {
-    const div = e.target.parentElement;
-    div.remove();
-
 });
 
