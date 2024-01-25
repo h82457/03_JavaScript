@@ -60,7 +60,8 @@ inputPhone.addEventListener("input", e => {
 
 
   /* 정규식을 이용한 검사 */
-const regExp = /^01[01679]-\d{3,4}-\d{4}$/;
+  const regExp = /^01[01679]-\d{3,4}-\d{4}$/;
+  
   if(regExp.test(value)){ //입력받은 값이 정규식과 일치
     phoneResult.textContent = "유효한 번호 형식입니다.";
     phoneResult.classList.add("check"); // check 클래스 추가
