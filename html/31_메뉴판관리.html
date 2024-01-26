@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31_메뉴판 관리</title>
+
+    <link rel="stylesheet" href="../css/31_메뉴판관리.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <span>식당명 :</span>
+            <span id="spanName">식당명을 입력하세요</span>
+            <input type="text" class="dis-non" id="inputName">
+        </div>
+        <div class="menuBoard">
+            <ul id="menuList">
+                <li>
+                    <input type="checkbox" class="check dis-non">
+                    <input type="text" class="i-menu">
+                    <input type="text" class="i-price">
+                </li>
+                <li>
+                    <input type="checkbox" class="check dis-non">
+                    <input type="text" class="i-menu">
+                    <input type="text" class="i-price">
+                </li>
+
+                <li>
+                    <span class="s-menu">카레 돈까스</span>
+                    <span class="s-price">10000원</span>
+                </li>
+                <li>
+                    <span>카레 돈까스</span>
+                    <span>10000원</span>
+                </li>
+                <li>
+                    <span>카레 돈까스</span>
+                    <span>10000원</span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer">
+            <button id="editBtn">수정</button>
+            <button id="addBtn" class="dis-non">추가</button>
+            <button id="delBtn" class="dis-non">삭제</button>
+            <button id="setBtn" class="dis-non">종료</button>
+            
+        </div>
+
+
+    </div>
+
+
+    <script src="../js/31_메뉴판관리.js"></script>
+</body>
+</html>

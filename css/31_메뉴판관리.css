@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid grey; */
+    font-size: 20px;
+}
+.container{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+.header{
+    height: 60px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+.header > span{
+    font-size: 30px;
+    font-weight: bold;
+}
+#inputName{
+    font-size: 30px;
+    font-weight: bold;
+}
+.dis-non{
+    display: none;
+}
+
+/* menuBoard */
+.menuBoard{
+    padding: 15px 0;
+    height: 350px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#menuList{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+}
+
+li{
+    width: 30%;
+    height: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.i-menu{
+    width: 130px;
+}
+.i-price{
+    width: 90px;
+}
+
+/* botton */
+.footer{
+    display: flex;
+    justify-content: end;
+    margin: 15px 0;;
+}
+.footer > button{
+    width: 100px;
+    border-radius: 5px;
+    
+
+}
